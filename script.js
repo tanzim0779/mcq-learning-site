@@ -1,14 +1,8 @@
 const questions = [
-  { q: "বাংলাদেশের জাতীয় ফুল কোনটি?", options: ["গোলাপ", "শাপলা", "জুঁই", "সূর্যমুখী"], answer: 1, explanation: "শাপলা বাংলাদেশের জাতীয় ফুল।" },
-  { q: "পৃথিবীর প্রাকৃতিক উপগ্রহ কোনটি?", options: ["মঙ্গল", "সূর্য", "চাঁদ", "শুক্র"], answer: 2, explanation: "চাঁদ পৃথিবীর একমাত্র প্রাকৃতিক উপগ্রহ।" },
-  { q: "পানির রাসায়নিক সংকেত কী?", options: ["CO₂", "O₂", "NaCl", "H₂O"], answer: 3, explanation: "পানির অণুতে দুটি হাইড্রোজেন ও একটি অক্সিজেন পরমাণু থাকে: H₂O।" },
-  { q: "বাংলাদেশের স্বাধীনতা দিবস কবে?", options: ["২১ ফেব্রুয়ারি", "২৬ মার্চ", "১৬ ডিসেম্বর", "১৪ এপ্রিল"], answer: 1, explanation: "বাংলাদেশের স্বাধীনতা দিবস ২৬ মার্চ।" },
-  { q: "সৌরজগতের সবচেয়ে বড় গ্রহ কোনটি?", options: ["পৃথিবী", "শনি", "বৃহস্পতি", "নেপচুন"], answer: 2, explanation: "বৃহস্পতি সৌরজগতের সবচেয়ে বড় গ্রহ।" },
-  { q: "এক ঘণ্টায় কত মিনিট?", options: ["৩০", "৬০", "৯০", "১০০"], answer: 1, explanation: "এক ঘণ্টা সমান ৬০ মিনিট।" },
-  { q: "উদ্ভিদ সালোকসংশ্লেষণের সময় কোন গ্যাস গ্রহণ করে?", options: ["অক্সিজেন", "নাইট্রোজেন", "কার্বন ডাই-অক্সাইড", "হাইড্রোজেন"], answer: 2, explanation: "উদ্ভিদ সালোকসংশ্লেষণে কার্বন ডাই-অক্সাইড গ্রহণ করে।" },
-  { q: "বাংলাদেশের মুদ্রার নাম কী?", options: ["রুপি", "টাকা", "রিয়াল", "দিনার"], answer: 1, explanation: "বাংলাদেশের মুদ্রার নাম টাকা।" },
-  { q: "ত্রিভুজের তিন কোণের সমষ্টি কত?", options: ["৯০°", "১৮০°", "২৭০°", "৩৬০°"], answer: 1, explanation: "সমতল জ্যামিতিতে ত্রিভুজের অন্তঃকোণগুলোর সমষ্টি ১৮০°।" },
-  { q: "কম্পিউটারের 'মস্তিষ্ক' বলা হয় কোন অংশকে?", options: ["মনিটর", "কিবোর্ড", "CPU", "মাউস"], answer: 2, explanation: "CPU নির্দেশনা প্রক্রিয়াকরণ করে, তাই একে প্রায়ই কম্পিউটারের মস্তিষ্ক বলা হয়।" }
+  { q: "Who is the creator of the website?", options: ["Tanzim", "Rahim", "ΛΥΛΠ", "Nayem vai"], answer: 1, explanation: "TANZIM" },
+  { q: "What is the dream of Tanzim?", options: ["IUT", "SUST", "BUET", "GSTU"], answer: 1, explanation: " Inshallah IUT" },
+  { q: "Will Tanzim be successful in his life?", options: ["Yes", "NO", " You predict", "none"], answer: 3, explanation: "only Allah ke this question" },
+  
 ];
 
 const homeScreen = document.getElementById("home-screen");
