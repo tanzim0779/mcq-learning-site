@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="সহজ, পরিষ্কার ও মোবাইল-ফ্রেন্ডলি MCQ অনুশীলন পরীক্ষা।">
+  <title>জ্ঞানপথ — MCQ পরীক্ষা</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="জ্ঞানপথ হোম">
+      <span class="brand-mark">জ</span>
+      <span>জ্ঞানপথ<span class="brand-dot">.</span><small>MCQ PRACTICE</small></span>
+    </a>
+    <span class="top-note"><span class="live-dot"></span> অনুশীলন মোড</span>
+  </header>
+
+  <main class="page-wrap">
+    <section id="home-screen" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">শেখো • অনুশীলন করো • এগিয়ে যাও</p>
+        <h1>প্রস্তুতি হোক<br><span>আরও আত্মবিশ্বাসী।</span></h1>
+        <p class="hero-text">ছোট্ট একটি MCQ পরীক্ষার মাধ্যমে নিজের প্রস্তুতি যাচাই করো। মনোযোগ দাও, সময়ের মধ্যে উত্তর দাও, আর শেষে নিজের ফলাফল দেখো।</p>
+        <div class="feature-row">
+          <div class="feature"><span class="feature-icon">◷</span><span><b>১০ মিনিট</b><small>সময়সীমা</small></span></div>
+          <div class="feature"><span class="feature-icon">✓</span><span><b>১০টি প্রশ্ন</b><small>MCQ কুইজ</small></span></div>
+          <div class="feature"><span class="feature-icon">↗</span><span><b>তাৎক্ষণিক</b><small>ফলাফল</small></span></div>
+        </div>
+        <button id="start-btn" class="btn btn-primary">পরীক্ষা শুরু করো <span aria-hidden="true">→</span></button>
+        <p class="small-note">নমুনা সাধারণ জ্ঞান কুইজ · কোনো লগইন লাগবে না</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-glow"></div>
+        <div class="paper-card">
+          <div class="paper-top"><span class="mini-logo">জ</span><span class="paper-lines"></span><span class="paper-menu">•••</span></div>
+          <div class="paper-title">আজকের লক্ষ্য</div>
+          <div class="paper-subtitle">একটি প্রশ্ন করে এগিয়ে যাও</div>
+          <div class="sample-q"><span class="q-number">০১</span><span>সূর্য কোন দিক থেকে ওঠে?</span></div>
+          <div class="sample-option selected"><span class="option-letter">A</span> পূর্ব দিক <span class="option-check">✓</span></div>
+          <div class="sample-option"><span class="option-letter">B</span> পশ্চিম দিক</div>
+          <div class="sample-option"><span class="option-letter">C</span> উত্তর দিক</div>
+          <div class="sample-progress"><span></span></div>
+          <div class="sample-footer"><span>১ / ১০ প্রশ্ন</span><span>চালিয়ে যাও →</span></div>
+        </div>
+        <div class="floating-score"><span>✦</span><div><b>প্রতিদিন একটু</b><small>উন্নতির পথে</small></div></div>
+        <div class="floating-check">✓</div>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <div><p class="eyebrow">সহজ তিনটি ধাপ</p><h2>পরীক্ষা দাও নিজের গতিতে</h2></div>
+      <div class="how-grid">
+        <article class="how-card"><span class="step-num">01</span><h3>প্রশ্ন পড়ো</h3><p>প্রতিটি প্রশ্ন মনোযোগ দিয়ে পড়ে সঠিক উত্তরটি বেছে নাও।</p></article>
+        <article class="how-card"><span class="step-num">02</span><h3>সময় খেয়াল রাখো</h3><p>টাইমার চলবে, তবে চাইলে নির্ধারিত সময়ের আগেই জমা দিতে পারো।</p></article>
+        <article class="how-card"><span class="step-num">03</span><h3>ফলাফল দেখো</h3><p>শেষে স্কোর ও সঠিক উত্তরগুলো দেখে নিজের প্রস্তুতি যাচাই করো।</p></article>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="quiz-screen hidden" aria-live="polite">
+      <div class="quiz-heading">
+        <div><p class="eyebrow">সাধারণ জ্ঞান · অনুশীলন পরীক্ষা</p><h1>তোমার সেরাটা দাও।</h1></div>
+        <div class="timer-box"><span class="timer-icon">◷</span><div><small>বাকি সময়</small><strong id="timer">10:00</strong></div></div>
+      </div>
+      <div class="quiz-layout">
+        <section class="question-panel">
+          <div class="question-meta"><span id="question-count">প্রশ্ন ১ / ১০</span><span id="answered-count">উত্তর দিয়েছ ০টি</span></div>
+          <div class="progress-track"><span id="progress-bar"></span></div>
+          <h2 id="question-text">প্রশ্ন এখানে দেখা যাবে</h2>
+          <div id="options" class="options-list"></div>
+          <div class="question-actions">
+            <button id="prev-btn" class="btn btn-secondary" disabled>← আগের প্রশ্ন</button>
+            <button id="next-btn" class="btn btn-primary">পরের প্রশ্ন →</button>
+          </div>
+        </section>
+        <aside class="question-nav">
+          <h3>প্রশ্নের তালিকা</h3>
+          <p>যেকোনো প্রশ্নে সরাসরি যেতে পারো।</p>
+          <div id="question-dots" class="question-dots"></div>
+          <div class="legend"><span><i class="legend-current"></i> বর্তমান</span><span><i class="legend-done"></i> উত্তর দেওয়া</span></div>
+          <button id="submit-btn" class="btn btn-submit">পরীক্ষা জমা দাও</button>
+          <p class="submit-hint">জমা দেওয়ার আগে উত্তরগুলো দেখে নাও।</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="result-screen" class="result-screen hidden" aria-live="polite">
+      <div class="result-header">
+        <div class="result-icon">✦</div>
+        <p class="eyebrow">পরীক্ষা সম্পন্ন</p>
+        <h1 id="result-title">দারুণ চেষ্টা!</h1>
+        <p id="result-message">তোমার ফলাফল নিচে দেওয়া হলো।</p>
+      </div>
+      <div class="score-card">
+        <div class="score-circle"><span id="score-percent">০%</span><small>স্কোর</small></div>
+        <div class="score-stats">
+          <div><span class="stat-dot correct-dot"></span><small>সঠিক উত্তর</small><strong id="correct-count">০</strong></div>
+          <div><span class="stat-dot wrong-dot"></span><small>ভুল উত্তর</small><strong id="wrong-count">০</strong></div>
+          <div><span class="stat-dot blank-dot"></span><small>উত্তর দাওনি</small><strong id="blank-count">০</strong></div>
+        </div>
+      </div>
+      <div class="review-heading"><div><p class="eyebrow">উত্তর পর্যালোচনা</p><h2>চলো, মিলিয়ে দেখি</h2></div><span id="review-total">১০টি প্রশ্ন</span></div>
+      <div id="answer-review" class="answer-review"></div>
+      <div class="result-actions"><button id="restart-btn" class="btn btn-primary">আবার পরীক্ষা দাও ↻</button><button id="home-btn" class="btn btn-secondary">হোমে ফিরে যাও</button></div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© <span id="year"></span> জ্ঞানপথ</span><span>অনুশীলনই উন্নতির পথ।</span></footer>
+
+  <dialog id="confirm-dialog" class="confirm-dialog">
+    <div class="dialog-icon">?</div><h2>পরীক্ষা জমা দেবে?</h2>
+    <p id="confirm-text">তুমি এখনও কিছু প্রশ্নের উত্তর দাওনি।</p>
+    <div class="dialog-actions"><button id="cancel-submit" class="btn btn-secondary">ফিরে যাই</button><button id="confirm-submit" class="btn btn-primary">হ্যাঁ, জমা দাও</button></div>
+  </dialog>
+</body>
+</html>
