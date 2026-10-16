@@ -1,4 +1,4 @@
-# জ্ঞানপথ — MCQ Practice Website
+# TΛΠΖiM — MCQ Practice Website
 
 একটি সহজ, responsive MCQ practice website। এটি HTML, CSS এবং JavaScript দিয়ে তৈরি; কোনো framework, backend, database বা API দরকার নেই।
 
