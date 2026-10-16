@@ -1,7 +1,7 @@
 const questions = [
-  { q: "Who is the creator of the website?", options: ["Tanzim", "Rahim", "ΛΥΛΠ", "Nayem vai"], answer: 1, explanation: "TANZIM" },
-  { q: "What is the dream of Tanzim?", options: ["IUT", "SUST", "BUET", "GSTU"], answer: 1, explanation: " Inshallah IUT" },
-  { q: "Will Tanzim be successful in his life?", options: ["Yes", "NO", " You predict", "none"], answer: 3, explanation: "only Allah ke this question" },
+  { q: "Who is the creator of the website?", options: ["Rahim", "Tanzim", "ΛΥΛΠ", "Nayem vai"], answer: 1, explanation: "TANZIM" },
+  { q: "What is the dream of Tanzim?", options: ["SUST", "IUT", "BUET", "GSTU"], answer: 1, explanation: " Inshallah IUT" },
+  { q: "Will Tanzim be successful in his life?", options: ["Yes", "NO", " You predict", "Inshallah"], answer: 3, explanation: "only Allah ke this question" },
   
 ];
 
